@@ -1,0 +1,129 @@
+<!doctype html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gestor de turno</title>
+</head>
+
+<body>
+
+  <img src="../img/cabeza_del_formulario.png" alt="Logo Docmed">
+
+  <h1><br>GESTOR DE TURNOS<br></h1>
+
+  <form action="formulario" method="get">
+
+    <fieldset>
+    <legend><h2>DATOS PERSONALES</h2></legend>
+    
+    <label for="Nombre">Nombres:</label>
+    <input type="text" name="Nombre" id="Nombre" pattern="[A-Za-z\s]{1,30}" placeholder="Ingrese su nombre" required>
+    <label for="Apellido">Apellido:</label>
+    <input type="text" name="Apellido" id="Apellido" pattern="[A-Za-z\s]{1,12}"  placeholder="Ingrese su apellido" required>
+ 
+    <br><br>
+    <label for="Numero_documento">Número de documento:</label>
+    <input type="text" name="Numero_documento" id="Numero_documento" pattern="[0-9]{8}"  placeholder="Ingrese numero de DNI" required>
+    <label for="Numero_tramite">Número de tramite:</label>
+    <input type="text" name="Numero_tramite" id="Numero_tramite" pattern="[0-9]{11}"  placeholder="Ingrese el numero de tramite de su DNI" required>
+
+    <br><br>
+    <label for="Direccion">Dirección:</label>
+    <input type="text" name="Direccion" id="Direccion" pattern="[A-Za-z\s]{1,30}"  placeholder="Ingrese nombre de la calle" required>
+    <label for="Numero_direccion">Número:</label>
+    <input type="text" name="Numero_direccion" id="Numero_direccion" pattern="[0-9]{1,5}"  placeholder="Número" required>
+    
+    <br><br>
+    <!-- SE RECOMENDARIA EL USO DE DATALIST DEPENDIENTE DE LA OPCION ELEGIDA EN PROVINCIA--> 
+    <label for="Localidad">Localidad:</label>
+    <input type="text" name="Localidad" id="Localidad" pattern="[A-Za-z0-9\s]{1,30}"  placeholder="Ingrese su localidad" required>
+    
+    <!-- SE RECOMENDARIA EL USO DE DATALIST PARA ELEGIR LAS PROVINCIAS--> 
+    <label for="Provincia">Provincia:</label>
+    <input type="text" name="Provincia" id="Provincia" pattern="[A-Za-z\s]{1,20}"  placeholder="Ingrese la provincia" required>
+
+    <br><br>
+    <label for="Ntelefono">Número de telefono:</label>
+    <input type="text" name="Ntelefono" id="Ntelefono" pattern="[0-9]{10}"  placeholder="Ingrese su número de telefono" required>
+    <br><br>
+    <label for="Email">Email:</label>
+    <input type="email" name="Email" id="Email" placeholder="Ingrese su correo" required>
+    </fieldset>
+
+    <fieldset>
+    <legend><h2>OBRA SOCIAL</h2></legend>
+    <label for="Obra_social">Obra social:</label>
+    <input type="text" name="Obra_social" id="Obra_social" pattern="[A-Za-z0-9]{1,25}"  placeholder="Ingrese su obra social">
+    <label for="Plan">Plan:</label>
+    <input type="text" name="Plan" id="Plan" pattern="[A-Za-z0-9]{1,30}"  placeholder="Ingrese su plan">
+    <br><br>
+    <label for="CUIL/CUIT">CUIL / CUIT:</label>
+    <input type="text" name="CUIL/CUIT" id="CUIL/CUIT" pattern="[0-9]{11}"  placeholder="Ingrese su CUIL/CUIT">
+    <br><br>
+    <label for="Numero_afiliado">N° de afiliado:</label>
+    <input type="text" name="Numero_afiliado" id="Numero_afiliado" pattern="[0-9]{11}"  placeholder="Ingrese el numero de tramite de su DNI">
+    </fieldset>
+
+    <fieldset>
+    <legend><h2>DOCUMENTOS</h2></legend>
+    <label for="Documento">DNI:</label>
+    <input type="file" name="Documento" id="Documento">
+    <br><br>
+    <label for="Carnet">Carnet Obra social:</label>
+    <input type="file" name="Carnet" id="Carnet">
+    <br><br>
+    <label for="Orden_medica">Orden médica:</label>
+    <input type="file" name="Orden_medica" id="Orden_medica">
+    </fieldset>
+
+    <fieldset>
+    <legend><h2>ESPECIALIDAD Y FECHA</h2></legend>
+    <label for="Especialidad">Especialidad:</label>
+      <select id="Especialidad">
+        <option id="Pediatra" value="Pediatra">Pediatra</option>
+        <option id="Clinico" value="Clinico">Clinico</option>
+        <option id="Ofmatologia" value="Ofmatologia">Ofmatologia</option>
+        <option id="Traumatologia" value="Traumatologia">Traumatologia</option>
+        <option id="Odontologia" value="Odontologia">Odontologia</option>
+    </select>
+    <label for="Doctor">Doctor:</label>
+      <input list="Lista_doctores" id="Doctor" name="Doctor" placeholder="Escriba el nombre">
+        <datalist id="Lista_doctores">
+          <option id="Juan_López" value="Dr Juan López">Clinico</option>
+          <option id="Ana_Fernández" value="Dra Ana Fernández">Odontologia</option>
+          <option id="Ricardo_Martínez" value="Dr Ricardo Martínez">Clinico</option>
+          <option id="Sofía_Sánchez" value="Dra Sofía Sánchez">Ofmatologia</option>
+          <option id="Miguel_Torres" value="Dr Miguel Torres">Traumatologia</option>
+          <option id="Carlos_Garcia" value="Dr Carlos Garcia">Odontologia</option>
+          <option id="Laura_Ramirez" value="Dra Laura Ramirez">Pediatra</option>
+        </datalist>
+    <br><br>
+    <label for="Turno">Elija la fecha para el turno:</label>
+    <input type="date" name="Turno" id="Turno">
+    </fieldset>
+    
+    <br><br>
+    <input type="submit" value="Solicitar turno">
+    <hr>
+  </form>
+<footer>
+  <pre>
+      Hospital y centro medico DOCMED | Direccion: Calle falsa 123 | TURNOS DIRECTOS: 291-5757575 | Email: turnos.hmbb@gmail.com 
+      
+      Numeros por especialidad: Pediatria: 291-1234567 // Clinica: 291-2345678 // Ofmatologia: 291-3456789
+                                Traumatologia: 291-4567890 // Odontologia: 291-5678901
+  </pre> 
+</footer>
+</body>
+</html>
+
+<!-- FORMULARIOS EJEMPLOS
+https://turnos.pami.org.ar/nuevo_turno_afiliado.php
+https://www.jotform.com/es/form-templates/turnos-online
+https://nc.ms.gba.gov.ar/index.php/s/E76MJLaczGncYHT
+https://www.familiasalud.com.ar/copia-de-solicitud-clave-turnos-adu
+https://turnos-hospitales.pami.org.ar/turnos.aspx
+https://cmmsa.com.ar/wp/solicitud-de-turnos/
+--> 
