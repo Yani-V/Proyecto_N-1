@@ -14,50 +14,50 @@
   <!--Boton para volver al inicio de la pagina princial-->
   <a href="../index.html">Home</a>
 
-  <h1><br>GESTOR DE TURNOS<br></h1>
+  <h1><br>Appointment request form<br></h1>
 
   <form action="formulario" method="get">
 
     <fieldset>
-    <legend><h2>DATOS PERSONALES</h2></legend>
+    <legend><h2>PERSONAL DATA</h2></legend>
     
-    <label for="Nombre">Nombres:</label>
+    <label for="Nombre">Name:</label>
     <input type="text" name="Nombre" id="Nombre" pattern="[A-Za-z\s]{1,30}" placeholder="Ingrese su nombre" required>
-    <label for="Apellido">Apellido:</label>
+    <label for="Apellido">Last name:</label>
     <input type="text" name="Apellido" id="Apellido" pattern="[A-Za-z\s]{1,12}"  placeholder="Ingrese su apellido" required>
  
     <br><br>
-    <label for="Numero_documento">Número de documento:</label>
+    <label for="Numero_documento">Identity number:</label>
     <input type="text" name="Numero_documento" id="Numero_documento" pattern="[0-9]{8}"  placeholder="Ingrese numero de DNI" required>
-    <label for="Numero_tramite">Número de tramite:</label>
+    <label for="Numero_tramite">Procedure number:</label>
     <input type="text" name="Numero_tramite" id="Numero_tramite" pattern="[0-9]{11}"  placeholder="Ingrese el numero de tramite de su DNI" required>
 
     <br><br>
-    <label for="Direccion">Dirección:</label>
+    <label for="Direccion">Address:</label>
     <input type="text" name="Direccion" id="Direccion" pattern="[A-Za-z\s]{1,30}"  placeholder="Ingrese nombre de la calle" required>
-    <label for="Numero_direccion">Número:</label>
+    <label for="Numero_direccion">Númber:</label>
     <input type="text" name="Numero_direccion" id="Numero_direccion" pattern="[0-9]{1,5}"  placeholder="Número" required>
     
     <br><br>
     <!-- SE RECOMENDARIA EL USO DE DATALIST DEPENDIENTE DE LA OPCION ELEGIDA EN PROVINCIA--> 
-    <label for="Localidad">Localidad:</label>
+    <label for="Localidad">Locality:</label>
     <input type="text" name="Localidad" id="Localidad" pattern="[A-Za-z0-9\s]{1,30}"  placeholder="Ingrese su localidad" required>
     
     <!-- SE RECOMENDARIA EL USO DE DATALIST PARA ELEGIR LAS PROVINCIAS--> 
-    <label for="Provincia">Provincia:</label>
+    <label for="Provincia">Province:</label>
     <input type="text" name="Provincia" id="Provincia" pattern="[A-Za-z\s]{1,20}"  placeholder="Ingrese la provincia" required>
 
     <br><br>
-    <label for="Ntelefono">Número de telefono:</label>
-    <input type="text" name="Ntelefono" id="Ntelefono" pattern="[0-9]{10}"  placeholder="Ingrese su número de telefono" required>
+    <label for="Numero_telefono">Phone number:</label>
+    <input type="text" name="Numero_telefono" id="Numero_telefono" pattern="[0-9]{10}"  placeholder="Ingrese su número de telefono" required>
     <br><br>
     <label for="Email">Email:</label>
     <input type="email" name="Email" id="Email" placeholder="Ingrese su correo" required>
     </fieldset>
 
     <fieldset>
-    <legend><h2>OBRA SOCIAL</h2></legend>
-    <label for="Obra_social">Obra social:</label>
+    <legend><h2>SOCIAL WORK</h2></legend>
+    <label for="Obra_social">Name of health insurance:</label>
     <input type="text" name="Obra_social" id="Obra_social" pattern="[A-Za-z0-9]{1,25}"  placeholder="Ingrese su obra social">
     <label for="Plan">Plan:</label>
     <input type="text" name="Plan" id="Plan" pattern="[A-Za-z0-9]{1,30}"  placeholder="Ingrese su plan">
@@ -65,58 +65,60 @@
     <label for="CUIL/CUIT">CUIL / CUIT:</label>
     <input type="text" name="CUIL/CUIT" id="CUIL/CUIT" pattern="[0-9]{11}"  placeholder="Ingrese su CUIL/CUIT">
     <br><br>
-    <label for="Numero_afiliado">N° de afiliado:</label>
+    <label for="Numero_afiliado">Affiliate number:</label>
     <input type="text" name="Numero_afiliado" id="Numero_afiliado" pattern="[0-9]{11}"  placeholder="Ingrese el numero de tramite de su DNI">
     </fieldset>
 
     <fieldset>
-    <legend><h2>DOCUMENTOS</h2></legend>
+    <legend><h2>DOCUMENTS</h2></legend>
     <label for="Documento">DNI:</label>
     <input type="file" name="Documento" id="Documento">
     <br><br>
-    <label for="Carnet">Carnet Obra social:</label>
+    <label for="Carnet">Medical insurance card:</label>
     <input type="file" name="Carnet" id="Carnet">
     <br><br>
-    <label for="Orden_medica">Orden médica:</label>
+    <label for="Orden_medica">Medical order:</label>
     <input type="file" name="Orden_medica" id="Orden_medica">
     </fieldset>
 
     <fieldset>
-    <legend><h2>ESPECIALIDAD Y FECHA</h2></legend>
-    <label for="Especialidad">Especialidad:</label>
+    <legend><h2>SPECIALTY AND DATE</h2></legend>
+    <label for="Especialidad">Specialty:</label>
       <select id="Especialidad">
-        <option id="Pediatra" value="Pediatra">Pediatra</option>
-        <option id="Clinico" value="Clinico">Clinico</option>
-        <option id="Ofmatologia" value="Ofmatologia">Ofmatologia</option>
-        <option id="Traumatologia" value="Traumatologia">Traumatologia</option>
-        <option id="Odontologia" value="Odontologia">Odontologia</option>
+        <option id="Clinico" value="Clinico">Clinical</option>
+        <option id="Dermatologia" value="Dermatologia">Dermatology</option>
+        <option id="Odontologia" value="Odontologia">Odontology</option>
+        <option id="Ofmatologia" value="Ofmatologia">Ophthalmology</option>
+        <option id="Traumatologia" value="Traumatologia">Physical therapy</option>    
     </select>
+    <!--MEJORAR A FUTURO PARA IMPLEMENTACION DE UNA LISTA DINAMINA-->>
+    <!--Que al elegir la especialidad permita ver solamente a los doctores de esa dicha especialidad-->>
     <label for="Doctor">Doctor:</label>
       <input list="Lista_doctores" id="Doctor" name="Doctor" placeholder="Escriba el nombre">
         <datalist id="Lista_doctores">
-          <option id="Juan_López" value="Dr Juan López">Clinico</option>
-          <option id="Ana_Fernández" value="Dra Ana Fernández">Odontologia</option>
-          <option id="Ricardo_Martínez" value="Dr Ricardo Martínez">Clinico</option>
-          <option id="Sofía_Sánchez" value="Dra Sofía Sánchez">Ofmatologia</option>
-          <option id="Miguel_Torres" value="Dr Miguel Torres">Traumatologia</option>
-          <option id="Carlos_Garcia" value="Dr Carlos Garcia">Odontologia</option>
-          <option id="Laura_Ramirez" value="Dra Laura Ramirez">Pediatra</option>
+          <option id="Juan_López" value="Dr Juan López">Clinical doctor</option>
+          <option id="Ricardo_Martínez" value="Dr Ricardo Martínez">Clinical doctor</option>
+          <option id="Ana_Fernández" value="Dra Ana Fernández">Dentist doctor</option>
+          <option id="Carlos_Garcia" value="Dr Carlos Garcia">Dentist doctor</option>
+          <option id="Sofía_Sánchez" value="Dra Sofía Sánchez">Oculist doctor</option>
+          <option id="Miguel_Torres" value="Dr Miguel Torres">Orthopedic surgeon</option>  
+          <option id="Laura_Ramirez" value="Dra Laura Ramirez">Skin doctor</option>  
         </datalist>
     <br><br>
-    <label for="Turno">Elija la fecha para el turno:</label>
+    <label for="Turno">Choose a date:</label>
     <input type="date" name="Turno" id="Turno">
     </fieldset>
     
     <br><br>
-    <input type="submit" value="Solicitar turno">
+    <input type="submit" value="Request an appointment">
     <hr>
   </form>
 <footer>
   <pre>
-      Hospital y centro medico DOCMED | Direccion: Calle falsa 123 | TURNOS DIRECTOS: 291-5757575 | Email: turnos.hmbb@gmail.com 
+      DOCMED Hospital and medical | Address: Calle falsa 123 | DIRECT APPOINTMENTS: 291-5757575 | Email: shifts.DOCMED@gmail.com 
       
-      Numeros por especialidad: Pediatria: 291-1234567 // Clinica: 291-2345678 // Ofmatologia: 291-3456789
-                                Traumatologia: 291-4567890 // Odontologia: 291-5678901
+      Numbers by specialty:         Clinic: +54 9 291-1234567 // Dermatology: +54 9 291-2345678 // Dentistry: +54 9 291-3456789
+                                    Ophmatology: +54 9 291-4567890 // Traumatology: +54 9 291-5678901
   </pre> 
 </footer>
 </body>
