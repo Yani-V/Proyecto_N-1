@@ -16,7 +16,7 @@
 
   <h1><br>Appointment request form<br></h1>
 
-  <form action="formulario" method="get">
+  <form action="formulario" method="post">
 
     <fieldset>
     <legend><h2>PERSONAL DATA</h2></legend>
@@ -49,7 +49,7 @@
 
     <br><br>
     <label for="Numero_telefono">Phone number:</label>
-    <input type="text" name="Numero_telefono" id="Numero_telefono" pattern="[0-9]{10}"  placeholder="Ingrese su número de telefono" required>
+    <input type="tel" name="Numero_telefono" id="Numero_telefono" placeholder="Ingrese su número de telefono" required>
     <br><br>
     <label for="Email">Email:</label>
     <input type="email" name="Email" id="Email" placeholder="Ingrese su correo" required>
@@ -66,19 +66,19 @@
     <input type="text" name="CUIL/CUIT" id="CUIL/CUIT" pattern="[0-9]{11}"  placeholder="Ingrese su CUIL/CUIT">
     <br><br>
     <label for="Numero_afiliado">Affiliate number:</label>
-    <input type="text" name="Numero_afiliado" id="Numero_afiliado" pattern="[0-9]{11}"  placeholder="Ingrese el numero de tramite de su DNI">
+    <input type="text" name="Numero_afiliado" id="Numero_afiliado" pattern="[A-Za-z0-9]{11}"  placeholder="Ingrese el numero de tramite de su DNI">
     </fieldset>
 
     <fieldset>
     <legend><h2>DOCUMENTS</h2></legend>
     <label for="Documento">DNI:</label>
-    <input type="file" name="Documento" id="Documento">
+    <input type="file" name="Documento" id="Documento" accept="image/png, image/jpeg">
     <br><br>
     <label for="Carnet">Medical insurance card:</label>
-    <input type="file" name="Carnet" id="Carnet">
+    <input type="file" name="Carnet" id="Carnet" accept="image/png, image/jpeg">
     <br><br>
     <label for="Orden_medica">Medical order:</label>
-    <input type="file" name="Orden_medica" id="Orden_medica">
+    <input type="file" name="Orden_medica" id="Orden_medica" accept="image/png, image/jpeg, application/docx, application/pdf ">
     </fieldset>
 
     <fieldset>
