@@ -10,7 +10,8 @@
             <nav>
                 <!--Logo-->
                 <a href="#">
-                    <img src="./img/Logo_Docmed.png" width="200" height="50"
+                    <img src="./img/Logo/Logo_Docmed.png" width="200"
+                        height="50"
                         alt="Logo Docmed">
                 </a>
 
@@ -18,8 +19,27 @@
                 <ul>
                     <li><a href="#">Home</a></li>
                     <li><a href="#">Department</a></li>
-                    <li><a href="#">Blog</a></li>
-                    <li><a href="#">Pages</a></li>
+
+                    <!-- Blog con submenú -->
+                    <li>
+                        <a href="#">Blog ▼</a>
+                        <ul>
+                            <li><a href="#">Health News</a></li>
+                            <li><a href="#">Medical Tips</a></li>
+                            <li><a href="#">Patient Stories</a></li>
+                        </ul>
+                    </li>
+
+                    <!-- Pages con submenú -->
+                    <li>
+                        <a href="#">Pages ▼</a>
+                        <ul>
+                            <li><a href="#">About Us</a></li>
+                            <li><a href="#">Our Services</a></li>
+                            <li><a href="#">FAQ</a></li>
+                        </ul>
+                    </li>
+
                     <li><a href="#">Doctors</a></li>
                     <li><a href="#">Contact</a></li>
                 </ul>
@@ -28,7 +48,8 @@
                 <a href="./src/formulario.html">Make an appointment</a>
             </nav>
             <section>
-                <img src="./img/Imagen_principal.png" alt="Imagen Principal">
+                <img src="./img/Banner/Banner_Principal.jpeg"
+                    alt="Banner Principal">
                 <h1>Health Care <br>
                     For Hole Family
                 </h1>
@@ -41,166 +62,188 @@
 
         <!--Contenido Principal-->
         <main>
-            <section>
+            <div>
                 <article>
-                    <img src="./img/Icono_Card1.png" alt="Icono Card1">
-                    <h3>Hospitality</h3>
+                    <img src="./img/Iconos/Icono_Hospitality.png"
+                        alt="Icono Hospitality">
+                    <h2>Hospitality</h2>
                     <p>Clinical excellence must be the priority for any health
                         care service provider</p>
                     <a href="#">Apply For A Bed</a>
                 </article>
-            </section>
-            <section>
+
                 <article>
-                    <img src="./img/Icono_Card2.png" alt="Icono Card2">
-                    <h3>Emergency Care</h3>
+                    <img src="./img/Iconos/Icono_Emergency.png"
+                        alt="Icono Emergency">
+                    <h2>Emergency Care</h2>
                     <p>Clinical excellence must be the priority for any health
                         care service provider</p>
                     <a href="#">+10 672 356 3567</a>
                 </article>
-            </section>
-            <section>
+
                 <article>
-                    <img src="./img/Icono_Card3.png" alt="Icono Card3">
-                    <h3>Chamber Service</h3>
+                    <img src="./img/Iconos/Icono_Service.png"
+                        alt="Icono Service">
+                    <h2>Chamber Service</h2>
                     <p>Clinical excellence must be the priority for any health
                         care service provider</p>
                     <a href="./src/formulario.html">Make an appoinment</a>
                 </article>
+            </div>
+            <br><br><br>
+
+            <!--Acerca de Docmed-->
+            <div>
+                <!-- Sección Welcome to Docmed -->
+                <!-- Las imágenes son archivos separados.
+Se posicionan con CSS para recrear el diseño visual de la plantilla original,
+generando el efecto de superposición y distribución lateral que se observa en la maqueta. -->
+                <img src="./img/Cards/Dental_Care.jpg" alt="Dental Care"
+                    width="250" height="350">
+                <br>
+                <img src="./img/Cards/Medicina-Integrativa-Card.jpg"
+                    alt="Medicina Integrativa" width="250" height="350">
+
+                <article>
+                    <!-- Contenido -->
+                    <p><strong>Welcome to Docmed</strong></p>
+                    <h2>Best Care For Your <br>
+                        Good Health
+                    </h2>
+                    <br>
+                    <p>Esteem spirit temper too say adieus who direct esteem.
+                        it esteems luckily or picture placing drawing.
+                        Apartments
+                        frequently or motionless on reasonable projecting
+                        expression.</p>
+                    <ul>
+                        <li><img src="./img/Iconos/Icono_Verificado.png"
+                                width="10"
+                                height="10"
+                                alt="Icono Verificado"> Apartaments frequently
+                            or
+                            motionless.</li>
+                        <li><img src="./img/Iconos/Icono_Verificado.png"
+                                width="10"
+                                height="10"
+                                alt="Icono Verificado"> Duis aute irure dolor in
+                            reprehenderit in voluptate.</li>
+                        <li><img src="./img/Iconos/Icono_Verificado.png"
+                                width="10"
+                                height="10"
+                                alt="Icono Verificado"> Voluptatem quia voluptas
+                            sit
+                            aspernatur.</li>
+                    </ul>
+                    <a href="#">Learn More</a>
+                </article>
+            </div>
+
+            <!--Sección Department-->
+            <section>
+                <h3>Our Department</h3>
+                <p>Esteem spirit temper too say adieus who direct esteem.
+                    it esteems luckily or picture placing drawing.</p>
+
+                <!--Card 1-->
+                <article>
+                    <img src="./img/Cards/Eye_Care-Card.png"
+                        alt="Servicio de cuidado ocular"
+                        width="300" height="300">
+                    <h3>Eye Care</h3>
+                    <p>Esteem spirit temper too say adieus who direct esteem</p>
+                    <a href="#">Learn More</a>
+                </article>
+
+                <br>
+
+                <!--Card 2-->
+                <article>
+                    <img src="./img/Cards/Physical_Therapy-Card.jpg"
+                        alt="Servicio de terapia física" width="300"
+                        height="300">
+                    <h3>Physical Therapy</h3>
+                    <p>Esteem spirit temper too say adieus who direct esteem</p>
+                    <a href="#">Learn More</a>
+                </article>
+
+                <br>
+
+                <!--Card 3-->
+                <article>
+                    <img src="./img/Cards/Dental_Care-Card.png"
+                        alt="Servicio de cuidado dental" width="300"
+                        height="300">
+                    <h3>Dental Care</h3>
+                    <p>Esteem spirit temper too say adieus who direct esteem</p>
+                    <a href="#">Learn More</a>
+                </article>
+
+                <br>
+
+                <!--Card 4-->
+                <article>
+                    <img src="./img/Cards/Diagnostic_Test-Card.jpg"
+                        alt="Servicio de diagnóstico médico" width="300"
+                        height="300">
+                    <h3>Diagnostic Test</h3>
+                    <p>Esteem spirit temper too say adieus who direct esteem</p>
+                    <a href="#">Learn More</a>
+                </article>
+
+                <br>
+
+                <!--Card 5-->
+                <article>
+                    <img src="./img/Cards/Skin_Surgery-Card.jpg"
+                        alt="Servicio de cirugía de piel" width="300"
+                        height="300">
+                    <h3>Skin Surgery</h3>
+                    <p>Esteem spirit temper too say adieus who direct esteem</p>
+                    <a href="#">Learn More</a>
+                </article>
+
+                <br>
+
+                <!--Card 6-->
+                <article>
+                    <img src="./img/Cards/Surgery_Service-Card.jpg"
+                        alt="Servicio de cirugía general" width="300"
+                        height="300">
+                    <h3>Surgery Service</h3>
+                    <p>Esteem spirit temper too say adieus who direct esteem</p>
+                    <a href="#">Learn More</a>
+                </article>
+
             </section>
+            <br><br>
         </main>
-        <br><br><br>
-        <!--Acerca de Docmed-->
-        <section>
-            <!--
-                            BUSCAR LAS IMAGENES POR SEPARADO Y AGREGAR
-            -->
 
-            <!-- Imágenes separadas -->
-            <img src="./img/img1.png" alt="Doctora atendiendo paciente">
-            <br>
-            <img src="./img/img2.png" alt="Detalle médico">
-
-            <!-- Contenido -->
-            <p><strong>Welcome to Docmed</strong></p>
-            <h3>Best Care For Your <br>
-                Good Health
-            </h3>
-            <br>
-            <p>Esteem spirit temper too say adieus who direct esteem.
-                it esteems luckily or picture placing drawing. Apartments
-                frequently or motionless on reasonable projecting
-                expression.</p>
-            <ul>
-                <li><img src="./img/Icono_verificado.png" width="10" height="10"
-                        alt="Icono_verificado"> Apartaments frequently or
-                    motionless.</li>
-                <li><img src="./img/Icono_verificado.png" width="10" height="10"
-                        alt="Icono_verificado"> Duis aute irure dolor in
-                    reprehenderit in voluptate.</li>
-                <li><img src="./img/Icono_verificado.png" width="10" height="10"
-                        alt="Icono_verificado"> Voluptatem quia voluptas sit
-                    aspernatur.</li>
-            </ul>
-            <a href="#">Learn More</a>
-        </section>
-
-        <!--Sección Department-->
-        <section>
-            <h2>Our Department</h2>
-            <p>Esteem spirit temper too say adieus who direct esteem.
-                it esteems luckily or picture placing drawing.</p>
-
-            <!--Card 1-->
-            <article>
-                <img src="./img/Eye_Care.png" alt="Servicio de cuidado ocular"
-                    width="300" height="300">
-                <h3>Eye Care</h3>
-                <p>Esteem spirit temper too say adieus who direct esteem</p>
-                <a href="#">Learn More</a>
-            </article>
-
-            <br>
-
-            <!--Card 2-->
-            <article>
-                <img src="./img/Physical_Therapy.png"
-                    alt="Servicio de terapia física" width="300" height="300">
-                <h3>Physical Therapy</h3>
-                <p>Esteem spirit temper too say adieus who direct esteem</p>
-                <a href="#">Learn More</a>
-            </article>
-
-            <br>
-
-            <!--Card 3-->
-            <article>
-                <img src="./img/Dental_Care.png"
-                    alt="Servicio de cuidado dental" width="300" height="300">
-                <h3>Dental Care</h3>
-                <p>Esteem spirit temper too say adieus who direct esteem</p>
-                <a href="#">Learn More</a>
-            </article>
-
-            <br>
-
-            <!--Card 4-->
-            <article>
-                <img src="./img/Diagnostic_Test.png"
-                    alt="Servicio de diagnóstico médico" width="300"
-                    height="300">
-                <h3>Diagnostic Test</h3>
-                <p>Esteem spirit temper too say adieus who direct esteem</p>
-                <a href="#">Learn More</a>
-            </article>
-
-            <br>
-
-            <!--Card 5-->
-            <article>
-                <img src="./img/Skin_Surgery.png"
-                    alt="Servicio de cirugía de piel" width="300" height="300">
-                <h3>Skin Surgery</h3>
-                <p>Esteem spirit temper too say adieus who direct esteem</p>
-                <a href="#">Learn More</a>
-            </article>
-
-            <br>
-
-            <!--Card 6-->
-            <article>
-                <img src="./img/Surgery_Service.png"
-                    alt="Servicio de cirugía general" width="300" height="300">
-                <h3>Surgery Service</h3>
-                <p>Esteem spirit temper too say adieus who direct esteem</p>
-                <a href="#">Learn More</a>
-            </article>
-
-        </section>
-        <br><br><br>
         <!--Pie de página-->
         <footer>
             <!-- Logo, descripción y redes sociales -->
-            <section>
+            <div>
                 <a href="#">
-                    <img src="./img/Logo_Docmed.png" width="200" height="50"
+                    <img src="./img/Logo/Logo_Docmed.png" width="200"
+                        height="50"
                         alt="Logo Docmed">
                 </a>
                 <br>
                 <p>Firmament morning sixth subdue darkness creeping gathered
                     divide.</p>
                 <br><br>
-                <a href="#"><img src="./img/facebook.png"
+                <a href="#"><img src="./img/Iconos/facebook.png"
                         alt="Logo Facebook"></a>
-                <a href="#"><img src="./img/instagram.png"
+                <a href="#"><img src="./img/Iconos/instagram.png"
                         alt="Logo Instagram"></a>
-                <a href="#"><img src="./img/logotipo-de-twitter.png"
+                <a href="#"><img src="./img/Iconos/Twitter.png"
                         alt="Logo Twiter"></a>
-            </section>
+            </div>
             <br>
+
             <!-- Lista de departamentos -->
-            <section>
-                <h6>Departments</h6>
+            <div>
+                <h4>Departments</h4>
                 <ul>
                     <li><a href="#">Eye Care</a></li>
                     <li><a href="#">Skin Care</a></li>
@@ -208,10 +251,11 @@
                     <li><a href="#">Medicine</a></li>
                     <li><a href="#">Dental</a></li>
                 </ul>
-            </section>
+            </div>
+
             <!-- Enlaces útiles -->
-            <section>
-                <h6>Useful Links</h6>
+            <div>
+                <h4>Useful Links</h4>
                 <ul>
                     <li><a href="#">About</a></li>
                     <li><a href="#">Blog</a></li>
@@ -219,21 +263,24 @@
                     <li><a href="#">Contact</a></li>
                     <li><a href="#">Appointment</a></li>
                 </ul>
-            </section>
+            </div>
+
             <!-- Información de contacto / dirección -->
-            <section>
-                <h6>Address</h6>
+            <div>
+                <h4>Address</h4>
                 <ul>
                     <li><a href="#">200, D-block, Green lane USA</a></li>
                     <li><a href="#">+10 367 467 8934</a></li>
                     <li><a href="#">docmed@contact.com</a></li>
                 </ul>
-            </section>
+            </div>
+
             <!-- Copyright -->
-            <section>
+            <div>
                 <p>Copyright © 2024 All rights reserved | This template is made
-                    with ♥ by <a href="#">Colorlib</a></p>
-            </section>
+                    with ♥ by <a href="#">Colorlib</a>
+                </p>
+            </div>
         </footer>
     </body>
 </html>
