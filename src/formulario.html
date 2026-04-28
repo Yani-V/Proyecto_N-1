@@ -19,7 +19,7 @@
     <main>
       <h1><br>Appointment request form<br></h1>
       <!-- Formulario para solicitud de turno -->
-      <form action="formulario" method="post">
+      <form action="/Reserva-turnos" method="post">
 
         <!-- Personal Data -->
         <fieldset>
@@ -46,7 +46,7 @@
           <br><br>
           <label for="Direccion">Address:</label>
           <input type="text" name="Direccion" id="Direccion"
-            pattern="[A-Za-z\s]{1,30}" placeholder="Ingrese nombre de la calle"
+            pattern="[A-Za-z0-9\s]{1,30}" placeholder="Ingrese nombre de la calle"
             required>
           <label for="Numero_direccion">Númber:</label>
           <input type="text" name="Numero_direccion" id="Numero_direccion"
@@ -118,7 +118,8 @@
         <fieldset>
           <legend><strong>Specialty And Date</strong></legend>
           <label for="Especialidad">Specialty:</label>
-          <select id="Especialidad">
+          <select id="Especialidad" name="especialidad" required>
+            <option value="" disabled selected hidden>Select a specialty</option>
             <option id="Clinico" value="Clinico">Clinical</option>
             <option id="Dermatologia" value="Dermatologia">Dermatology</option>
             <option id="Odontologia" value="Odontologia">Odontology</option>
@@ -131,9 +132,9 @@
           <!-- Al elegir una especialidad, mostrar solo los doctores de esa especialidad -->
           <label for="Doctor">Doctor:</label>
           <input list="Lista_doctores" id="Doctor" name="Doctor"
-            placeholder="Escriba el nombre">
+            placeholder="Escriba el nombre" required>
 
-          <!-- Doctor list with datalist -->
+          <!-- Lista de doctores datalist -->
           <datalist id="Lista_doctores">
             <option id="Juan_López" value="Dr Juan López">Clinical
               doctor</option>
@@ -151,9 +152,13 @@
               doctor</option>
           </datalist>
           <br><br>
-
+        
+        <!-- Dia y hora para solicitar el turno  -->
           <label for="Turno">Choose a date:</label>
-          <input type="date" name="Turno" id="Turno">
+          <input type="date" name="Turno" id="Turno" required>
+          
+          <label for="Hora">Hour:</label>
+          <input type="time" name="hora_turno" id="Hora" required>
         </fieldset>
 
         <br><br>
